@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f5f5f5;
+}
+
+.contentValue {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  gap: 25px;
+  border: 1px solid;
+  border-radius: 20px;
+  padding: 50px 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  display: none;
+  margin: 0;
+}
+
+button {
+  text-align: center;
+  margin: 8px auto;
+  width: 33%;
+  padding: 14px 10px;
+  border: 1px solid black;
+  border-radius: 4px;
+  background-color: rgb(199, 198, 198);
+  font-weight: 600;
+  color: black;
+  cursor: pointer;
+}
+
+input {
+  padding-left: 10px;
+  height: 26px;
+  border-radius: 4px;
+  border: 1px solid black;
+  width: 75%;
+  margin: 8px auto;
+  cursor: text;
+}
+
+input:disabled {
+  border: none;
+  cursor: default;
+  opacity: 0.5;
+}
+
+button:disabled {
+  border: none;
+  cursor: default;
+  opacity: 0.5;
+}
+
+.valoresDefault {
+  background-color: rgb(168, 167, 167);
+  border-radius: 3px;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 75%;
+}
+
+.firstForm {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+}
+
+.secondForm {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+}
+
+.deleteForm {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+}
+
+.labelValues {
+  text-align: center;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Ex 3</title>
+  </head>
+  <body>
+    <div class="contentValue">
+      <div class="firstForm">
+        <label class="labelValues" id="label1" for="valuesInput">
+          Digite cinco números, um de cada vez, e então insira-os.
+        </label>
+        <input
+          id="valuesInput"
+          type="number"
+          name="valuesInput"
+          placeholder="Type a number"
+          class="firstInput"
+        />
+        <button
+          id="btnAdd"
+          class="firstButton"
+          onclick="handleGetAndShowInputValue()"
+        >
+          Insere valor
+        </button>
+      </div>
+
+      <div id="valores" class="valoresDefault"></div>
+
+      <div id="deleteForm" class="deleteForm">
+        <span>Clique para remover dois itens</span>
+        <button
+          id="removeBtn"
+          class="removeButton"
+          onclick="handleRemoveTwoElements()"
+          disabled="true"
+        >
+          Remove dois itens
+        </button>
+      </div>
+
+      <div id="valoresRemovidos" class="valoresDefault"></div>
+
+      <div class="secondForm">
+        <label for="valuesInput" class="labelValues" id="labelInput2">
+          Digite mais dois valores, um de cada vez.
+        </label>
+        <input
+          id="valuesInput2"
+          type="number"
+          name="valuesInput2"
+          placeholder="Type a number"
+          disabled="true"
+        />
+        <button
+          id="btnAdd2"
+          disabled="true"
+          onclick="handleGetAndShowInputValue()"
+        >
+          Insere valor
+        </button>
+      </div>
+
+      <div id="valores2" class="valoresDefault"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
